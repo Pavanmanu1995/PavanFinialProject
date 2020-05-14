@@ -26,7 +26,7 @@
 			<configuration>
 				<archive>
 					<manifest>
-						<mainClass>src/main/resources</mainClass>
+						<mainClass>src/main/webapp</mainClass>
 					</manifest>
 				</archive>
 			</configuration>
