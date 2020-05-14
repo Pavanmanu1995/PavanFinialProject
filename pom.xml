@@ -27,6 +27,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jar-plugin</artifactId>
             <configuration>
+              <mainClass>src/main/webapp</mainClass>
                 <archive>
                     <manifestEntries>
                         <splashscreen-image>${image.name}</splashscreen-image>
