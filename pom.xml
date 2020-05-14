@@ -18,19 +18,23 @@
   <build>
     <finalName>firstwebpipeline</finalName>
     <plugins>
-		<plugin>
-			<!-- Build an executable JAR -->
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-jar-plugin</artifactId>
-			<version>3.1.0</version>
-			<configuration>
-				<archive>
-					<manifest>
-						<mainClass>src/main/webapp</mainClass>
-					</manifest>
-				</archive>
-			</configuration>
-		</plugin>
-	</plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+                <archive>
+                    <manifestEntries>
+                        <splashscreen-image>${image.name}</splashscreen-image>
+                    </manifestEntries>
+                </archive>
+            </configuration>
+        </plugin>
+
+    </plugins>
   </build>
 </project>
